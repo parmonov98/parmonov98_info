@@ -1,0 +1,801 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 !important;
+    /*background-image: url("./imgs/Most-Popular-Programming-Languages.png");*/
+    
+    
+}
+
+.clear{
+    clear: both;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+header.header{
+    border-top: 2px dotted aliceblue;
+    /* #864f9c , #16c2a3 ,  */
+    background: #042f4b;
+    background-repeat: no-repeat;
+}
+
+.barcontainer {
+    visibility: hidden;
+}
+
+.header > .wrapper > div.logo > a{
+    color: #fff6da;
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.header > .wrapper > div.logo {
+    float: left;
+    margin: 1.5em 0em;
+    border-bottom: aliceblue 2px solid;
+}
+
+
+.header > .wrapper > div.logo > a:hover span{
+    color: #fff6da;
+    display: inline-block;
+    
+    font-size: 1em;
+}
+
+span.emphasize{
+    font-size: .5em;
+    transition: all .3s;
+    color: aliceblue;
+}
+
+.shown{
+    top: 40px;
+    left: 0;
+    max-height: 100% !important;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: rgb(30, 43, 57);
+    visibility: visible !important;
+    transition: max-height .3s ease-in;
+}
+
+.header > .wrapper > ul.menu{
+    float: right;
+    list-style: none;
+    margin: 26px 0;
+    transition: max-height .3s ease-in-out;
+}
+
+.header > .wrapper > ul.menu > li {
+    float: left;
+}
+
+
+.header > .wrapper > ul.menu > li > a{
+    transition: all .3s;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff1c1;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+.header > .wrapper > ul.menu > li > a:hover{
+    background-color: #fff6da;
+
+    color: #216583;
+}
+.welcome{
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 0px auto;
+    margin-top: 100px;
+    text-align: center;
+    color: springgreen;
+    width: 750px;
+    height: 600px;
+}
+
+
+.welcome > h1{
+    
+}
+
+.welcome > .contactme{
+    padding: 15px 30px;
+    background-color: #2fb9e7;
+    text-decoration: none;
+    color: #102831;
+    display: inline-block;
+    margin: 00px 0;
+}
+
+#welcome-section > div.photo {float: left;}
+
+#welcome-section > p.desc {
+    float: right;
+    margin-top: 60px;
+    /* margin: 0; */
+    width: 60%;
+    color: springgreen;
+    text-decoration-line: overline;
+}
+
+div.services {
+    height: 600px;
+    margin-top: 210px;
+    background-color: #16c2a3;
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+div.services .wrapper{
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+div.services .wrapper > div.types {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+div.services .wrapper > div.types > .item{
+    float: left;
+    width: calc(100% / 3 - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.services .wrapper > div.types > .item > h3{
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+
+div.services .wrapper > div.types > .item > p{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 300;
+}
+
+div.services .wrapper > div.types > .item > img{
+    width: 50%;
+    height: 170px;
+}
+
+div.skills{
+    background-color: #e7f1f8;
+    height: 450px;
+    padding: 20px 0;
+}
+
+div.skills > .wrapper > h2{
+    margin: 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: #3c4761;
+}
+
+div.skills > .wrapper > p{
+    margin: 40px auto;
+    width: 50%;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    color: #3c4761;
+}
+
+
+div.skills > .wrapper > h4{
+    margin:  50px 0;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #3c4761;
+}
+
+
+/* circle bars */
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .single-chart {
+    width: 50%;
+    justify-content: space-around ;
+    margin: 0 auto;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 300px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #d7457f;
+  }
+  
+  
+  .circular-chart.jquery .circle {
+    stroke: #FAA523;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #2fb9e7;
+  }
+  
+  .circular-chart.bold-blue .circle {
+    stroke: #474A8A;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+  /* end of circle bar*/
+
+
+.skill-items{
+    height: 240px;
+}
+
+.skill-items > .item{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: calc(100% / 4 - 10px);
+    height: 340px;
+}
+
+.skill-items > .item > .single-chart{
+    
+}
+
+  .skill-items > .item > h4{
+    font-size: 24px; 
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
+  }
+
+  div.portfolio {
+      background-color: #ffdd99;
+      padding: 50px 0;
+  }
+
+  div.portfolio > .wrapper > h1 {
+        text-align: center;
+        margin: 0;
+        color: #393939;
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Titillium Web', sans-serif;
+  }
+
+  div.portfolio > .wrapper > p {
+        text-align: center;
+        margin: 0;
+        color: #393939;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Titillium Web', sans-serif;
+  }
+
+  .sorting-items{
+      list-style: none;
+      width: 30%;
+      margin: 50px auto;
+  }
+
+  .sorting-items > li.active > a{
+    background-color: #00000075;
+    color: #fff;
+    font-weight: 600;
+  }
+
+
+ .sorting-items > li > a{ 
+    display: inline-block;
+    background-color: #00000015;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin: 5px 10px;
+    border-radius: 7px;
+    font-family: 'Titillium Web', sans-serif;
+    font-style: normal;
+}
+
+ .sorting-items > li {
+    float: left;
+
+}
+
+div.projects{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+
+.projects > div.pro-item {
+    background-color: #fff;
+    margin: 10px 10px 10px;
+    padding: 10px 10px;
+    min-width: 320px;
+    max-width: calc(100% / 3 - 50px);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects > div.pro-item img {
+    min-width: 240px;
+    height: 200px;
+    width: 100%;
+}
+
+
+div.resume{
+    padding: 50px 0;
+    background-color: #012123;
+}
+div.resume  .content{
+    display: flex;    
+}
+
+div.resume  .content>div.left{
+    flex-basis: calc(100% / 3 * 2);
+}
+
+div.resume  .content>div.left > .summary{
+    border-left: #102831 1px solid;
+    padding: 0 0 0 20px;
+}
+
+div.resume h1.person-title{
+    font-family: "Roboto TTF", sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    line-height: 2em;
+    color: #eee;
+    margin: 0;
+}
+.summary > h3{
+    color: #fff;
+}
+div.text-summary > h3{
+    font-family: "Roboto TTF", sans-serif;
+    color: #fff;
+}
+div.text-summary{
+    color: #aaa;
+    line-height: 1.4;
+    font-weight: normal;
+    font-family: "Roboto TTF", sans-serif;
+
+}
+
+
+div.text-summary a{
+    color: #fff;
+}
+
+
+div.text-summary a:hover{
+    text-decoration: none;
+}
+
+
+div.text-summary > ul li{
+    margin: 15px 0;
+}
+.info-block{
+    color: #fff;
+}
+div.info-block > ul > li > span{
+    display: block;
+    font-weight: 600;
+    margin: 10px 0; 
+}
+
+div.info > ul  {
+    padding: 0;
+}
+
+
+div.info > ul > li > div.bar {
+    margin: 10px 0;
+    display: block;
+}
+
+div.info > ul > li {
+    margin: 30px 0;
+    display: block;
+}
+
+div.info > ul > li > div.bar > .filled{
+    padding: 2px 0;
+    float: left;
+    background: #2fb9e7;
+}
+
+div.info > ul > li > div.bar > .unfilled{
+    padding: 2px 0;
+    background: #fff;
+}
+.p5 { width: 5%}
+.p10 { width: 10%}
+.p15 { width: 15%}
+
+.p20 { width: 20%}
+.p25 { width: 25%}
+.p30 { width: 30%}
+
+.p35 { width: 35%}
+.p40 { width: 40%}
+.p45 { width: 45%}
+
+.p50 { width: 50%}
+.p55 { width: 55%}
+
+.p60 { width: 60%}
+.p65 { width: 55%}
+.p70 { width: 70%}
+
+.p75 { width: 75%}
+.p80 { width: 80%}
+.p85 { width: 85%}
+
+.p90 { width: 90%}
+.p95 { width: 95%}
+
+.p100 { width: 100%}
+
+
+div.contact h1, div.contact p{
+    text-transform: uppercase;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+div.contact{
+    background-color: #3c5399;
+    padding: 50px 0;
+}
+
+
+
+div.contact form{
+    width: 900px;
+    margin: 0 auto;
+}
+
+div.contact form > div{
+    margin: 50px auto;
+}
+
+div.contact form > div > input{
+    width: 380px;
+    padding: 15px 10px;
+    margin: 15px 5px;
+    border: 0;
+    color: #fff;
+    background-color: #273971;
+}
+
+div.contact form > div > input.btn{
+    width: 220px;
+    padding: 20px 10px;
+    background-color: #2fb9e7;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+div.contact form > div > input:nth-child(2){
+
+}
+
+div.contact form > div > input::placeholder{
+    color: #fff;
+}
+
+div.contact form > div > textarea::placeholder{
+    color: #fff;
+}
+
+div.contact form > div > textarea{
+    padding: 15px 10px;
+    background-color: #273971;
+    border: 0;
+    width: 800px;
+    color: #fff;
+    height: 200px;
+}
+
+footer.footer{
+    background-color: #334b8e;
+}
+
+ul.bottom-menu {
+    padding: 30px 0;
+    margin: 0;
+    list-style: none;    
+    display: flex;
+    justify-content: center;
+    justify-items: auto;
+}
+
+ul.bottom-menu > li {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+ul.bottom-menu > li > a{
+    
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+ul.bottom-menu > li > a:hover{
+    color: #2fb9e7;
+    
+}
+
+/* mobile responsive */
+/* smartphone vs iphone*/
+@media only screen and (max-width: 768px){
+
+    body{
+        background-color: #1e6598;
+        background-image: none;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .barcontainer {
+        float: right;
+        display: inline-block;
+        cursor: pointer;
+        visibility: visible;
+    }
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+    .header > .wrapper > div.logo{
+        float: none; 
+        padding: 20px 10px;
+        position: fixed;
+        width: 100%;
+        top: 0 !important;
+        left: 0;
+        background: #000;
+        padding: 12px 10px;
+        margin: 0;
+        box-sizing: border-box;
+        z-index: 1;
+    }
+
+    .header > .wrapper > div.logo > a {
+        
+        font-size: 1.5em;
+    }
+    
+
+    .header > .wrapper > ul.menu {
+        float: right;
+        list-style: none;
+        margin: 26px 0;
+        max-height: 0;
+        visibility: hidden;
+        transition: max-height .3s ease-in-out;
+    }
+
+
+    .header > .wrapper > ul.menu > li {
+        float: none; 
+        width: 100%;
+    }
+
+    .header > .wrapper > ul.menu > li > a{
+        display: block;
+    }
+
+    .welcome {
+        font-family: 'Courier New', Courier, monospace;
+        margin: 30px auto;
+        width: auto;
+        height: auto;
+    }
+
+    .welcome > h1 {
+        font-size: 1.6em;
+    }
+    
+    div.services {
+        height: auto;
+    }
+    div.services .wrapper > div.types {
+        flex-direction: column;        
+    }
+    div.services .wrapper > div.types > .item {
+        float: none; 
+        width: 95%;
+    }
+
+    div.skills {
+        height: auto;
+    }
+
+    div.skills > .wrapper > p {
+        font-size: 15px;
+    }
+
+    .skill-items {
+        height: auto;
+    }
+    
+
+    .skill-items > .item{
+        float: none;
+        width: 100%;
+    }
+
+
+
+    .sorting-items {
+        list-style: none;
+        width: 100%;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    div.projects > .pro-item{
+        width: 100%;
+        max-width: 90%; 
+    }
+    .projects > div.pro-item img {
+        min-width: 240px;
+        height: 200px;
+    }
+
+
+    div.resume {
+        
+    }
+
+
+    div.resume .content {
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    div.resume h1.person-title{
+        text-align: center;
+    }
+    div.resume .content ul{
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    div.contact form > div > input {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    div.contact form > div > textarea {
+        margin-left: 20px;
+        width: 80%;
+        height: 140px;
+    }
+
+    div.contact form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    ul.bottom-menu {
+        display: block;
+    }
+}
+/* mobile responsive */
+
+
+.gocv{
+    padding: 10px 20px;
+    background: #444;
+    display: inline-block;
+    color: #eee;
+}

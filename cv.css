@@ -1,0 +1,239 @@
+/* header bg and blue text color: rgb(0, 157, 223); */
+/* sidebar bg : rgb(65, 79, 95); */
+/* sidebar bar undone color : #BDBFC1 */
+/* sidebar  text color : #FEFEFE */
+
+/* silver text color : rgb(115, 116, 118); */
+/* bold text color : rgb(77, 77, 78); */
+/* border-bottom line color: rgb(65, 79, 95); */
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.screen{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header > div.screen{ 
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0, 157, 223);
+}
+
+header h1{
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 64px;
+}
+
+header div.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header div.right > div.circle{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+header div.right img{
+    height: 100%;
+}
+
+
+
+main div.screen{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.block {
+    margin: 50px 0;
+}
+.block h1{
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 24px;
+    color: #284157;
+}
+
+
+div.content > div div.inner-content > div.item{
+    display: flex;    
+    
+}
+
+div.content > div div.inner-content > div.item > span::before{
+    height: 16px;
+    width: 16px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 0 2px 3px #59b1ff;
+    border-radius: 50%;
+    right: -10px;
+}
+div.content > div div.inner-content > div.item > div.info{
+    padding-left: 50px;
+    flex: 1.5;
+}
+
+div.content > div div.inner-content > div.item  > span{
+    width: 240px !important;
+    font-weight: 700;
+    border-right: 3px solid #284157;
+    position: relative;
+    flex: 0.5;
+}
+div.content > div div.inner-content > div.item > div.info > h3{
+    font-size: 22px;
+    line-height: 24px;
+    color: #43454b;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+div.content > div div.inner-content > div.item > div.info > h4{
+    font-size: 18px;
+    line-height: 24px;
+    color: #707276;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+div.block:last-child > .inner-content
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+
+
+main div.sidebar{
+    width: 440px;
+    background:rgb(35, 79, 65);
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+
+main div.sidebar div.item > p{
+    font-size: 14px;
+    line-height: 22px;
+    color: #eeffee;
+    text-align: justify;
+    margin: 0;
+}
+main div.sidebar div.item > h3::before{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    bottom: -20px;
+}
+main div.sidebar div.item > h3::after{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    left: 0;
+    background-color: rgb(0, 227, 103);
+    box-shadow: 0 0 1px 1px #ffffff50;
+    bottom: -20px;
+}
+main div.sidebar div.item > h3{
+    position: relative;
+    font-size: 36px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+div.sidebar > div.item strong{
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+
+div.item > div.bars > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+div.item > div.bars > div > span{
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+div.item > div.bars > div > a::before{
+    display: inline-block;
+    content: '';
+    position: absolute;
+    height: 8px;
+    left: 0;
+    background-color: rgb(0, 227, 103);
+    box-shadow: 0 0 1px 1px #ffffff50;
+    bottom: 0px;
+    border-radius: 5px;
+}
+div.item > div.bars > div > a{
+    height: 8px;
+    position: relative;
+    background: #eee;
+    width: 120px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.bar10::before{width: 10%;}
+.bar15::before{width: 15%;}
+.bar20::before{width: 20%;}
+.bar25::before{width: 25%;}
+.bar30::before{width: 30%;}
+.bar35::before{width: 35%;}
+.bar40::before{width: 40%;}
+.bar45::before{width: 45%;}
+.bar50::before{width: 50%;}
+.bar55::before{width: 55%;}
+.bar60::before{width: 60%;}
+.bar65::before{width: 65%;}
+.bar70::before{width: 70%;}
+.bar75::before{width: 75%;}
+.bar80::before{width: 80%;}
+.bar85::before{width: 85%;}
+.bar90::before{width: 90%;}
+.bar95::before{width: 95%;}
+.bar100::before{width: 100%;}
+
+
+@media print{
+    .two {
+        column-count: 2;
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+      }
+      .one {
+        column-count: 1;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+      }
+}
