@@ -339,7 +339,7 @@ div.skills > .wrapper > h4{
 
   .sorting-items{
       list-style: none;
-      width: 30%;
+
       margin: 50px auto;
   }
 
@@ -789,6 +789,10 @@ ul.bottom-menu > li > a:hover{
     ul.bottom-menu {
         display: block;
     }
+	ul.bottom-menu > li {
+		width: 90%;
+		text-align: center;
+	}
 }
 /* mobile responsive */
 

@@ -18,7 +18,7 @@ function sortProjectsById(el){
                 el.target.parentElement.classList.add('active');
                 let projects = document.getElementById('projects-block');
                 let items = projects.querySelectorAll("[class=pro-item]");
-                console.log(items);
+                //console.log(items);
                 for(let i = 0; i < items.length; i++){
                     items[i].style.display = 'block';
                 }
@@ -27,7 +27,7 @@ function sortProjectsById(el){
                 showAll()
             el.target.parentElement.classList.add('active');
             let logos = document.querySelectorAll("[data-type]:not([data-type='bot'])");
-            console.log(logos);
+            //console.log(logos);
             for(let i = 0; i < logos.length; i++){
                 logos[i].style.display = 'none';
             }
@@ -36,7 +36,7 @@ function sortProjectsById(el){
                 showAll()
                 el.target.parentElement.classList.add('active');
                 let photo = document.querySelectorAll("[data-type]:not([data-type='front'])");
-                console.log(photo);
+                //console.log(photo);
                 for(let i = 0; i < photo.length; i++){
                     photo[i].style.display = 'none';
                 }
@@ -45,7 +45,7 @@ function sortProjectsById(el){
                 showAll()
                 el.target.parentElement.classList.add('active');
                 let webdeisgn = document.querySelectorAll("[data-type]:not([data-type='back'])");
-                console.log(webdeisgn);
+                //console.log(webdeisgn);
                 for(let i = 0; i < webdeisgn.length; i++){
                     webdeisgn[i].style.display = 'none';
                 }
@@ -57,7 +57,7 @@ function sortProjectsById(el){
 function showAll(){
     let projects = document.getElementById('projects-block');
     let items = projects.querySelectorAll("[class=pro-item]");
-    console.log(items);
+    //console.log(items);
     for(let i = 0; i < items.length; i++){
         items[i].style.display = 'block';
     }

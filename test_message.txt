@@ -1,0 +1,2 @@
+{"update_id":385079449,
+"message":{"message_id":795,"from":{"id":1103151565,"is_bot":false,"first_name":"Ibrat","last_name":"Xudoyberganov"},"chat":{"id":1103151565,"first_name":"Ibrat","last_name":"Xudoyberganov","type":"private"},"date":1596315705,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}
